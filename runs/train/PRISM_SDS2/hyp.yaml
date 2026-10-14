@@ -1,0 +1,17 @@
+beta1: 0.9
+box: 5.0
+cls: 1.0
+fl_gamma: 2.0
+fliplr: 0.5
+flipud: 0.0
+lr0: 0.0001
+lr_decay_epoch: 80
+lrf: 0.01
+momentum: 0.9
+obj: 1.0
+prior: 0.01
+warmup_bias_lr: 1.0e-05
+warmup_epochs: 0.0
+warmup_momentum: 0.8
+wav: 0.1
+weight_decay: 0.0005
