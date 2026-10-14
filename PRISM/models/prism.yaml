@@ -1,0 +1,6 @@
+# PRISM configuration (not a YOLO layer graph)
+channels: [96, 192, 384, 768]
+hfe_repeats: 3
+rwkv_blocks: 2
+rwkv_hidden_rate: 3.25
+fused_channels: 128
