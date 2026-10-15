@@ -145,7 +145,7 @@ To resume training:
 
 ```bash
 python train.py \
-  --resume runs/train/PRISM_SDS/weights/last.pt \
+  --resume runs/train/PRISM/weights/last.pt \
   --data data/multispectral/SeaDroneSee.yaml \
   --name PRISM_SDS \
   --exist-ok
@@ -155,19 +155,16 @@ python train.py \
 
 ```bash
 python val.py \
-  --weights runs/train/PRISM_SDS/weights/best.pt \
+  --weights runs/train/PRISM/weights/best.pt \
   --data data/multispectral/SeaDroneSee.yaml \
   --batch-size 1 \
   --device 0
 ```
-
-The bundled evaluator is intended for development and sanity checks. Benchmark results should be reported with the official evaluation protocol of the corresponding dataset.
-
 ## Inference
 
 ```bash
 python detect.py \
-  --weights runs/train/PRISM_SDS/weights/best.pt \
+  --weights runs/train/PRISM/weights/best.pt \
   --source /path/to/test/images \
   --img-size 640 \
   --device 0 \
@@ -178,7 +175,7 @@ Optional flight metadata can be provided during standalone inference:
 
 ```bash
 python detect.py \
-  --weights runs/train/PRISM_SDS/weights/best.pt \
+  --weights runs/train/PRISM/weights/best.pt \
   --source /path/to/image.jpg \
   --height 50 \
   --angle 35 \
